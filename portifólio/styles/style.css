@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: #f6f6f6;
+    --cor-teciaria: #3d0546;
+
+    /* Teria que fazer a da fonte também, e trocar as cores pelas variaveis, mas eu to com preguiça kakakak */
+    
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: black;
+    color: #f6f6f6;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%; 
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+} 
+
+.cabecalho__menu__links {
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+    color: #f6f6f6;
+}
+
+.titulo-destaque {
+    color: #3d0546;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    align-items: center;
+    gap: 1.87rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'krona one', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__botao {
+    /* background-color: #22d4fd; */
+    border: 5px solid #3d0546;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.35rem;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.apresentacao__botao:hover {
+    background-color: #272727;
+}
+
+.rodape {
+    color: #000000;
+    background-color: #3d0546;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    } 
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
